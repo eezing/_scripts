@@ -1,7 +1,9 @@
 #!/bin/bash
 
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # copy template folder
-cp -r -n _scripts/express-template/* _scripts/express-template/"."[!"."]* ./
+cp -r -n $SCRIPT_DIR/express-template/* _scripts/express-template/"."[!"."]* ./
 
 # yarn
 yarn add express body-parser

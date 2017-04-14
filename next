@@ -1,7 +1,9 @@
 #!/bin/bash
 
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # copy template folder
-cp -r -n _scripts/next-template/*/.?* ./
+cp -r -n $SCRIPT_DIR/next-template/*/.?* ./
 
 # yarn
 yarn add react react-dom next
