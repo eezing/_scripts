@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "dev": "PORT=3000 nodemon --ignore __temp__* index",
+    "start": "node index"
+  }
+}

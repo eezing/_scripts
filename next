@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# copy template folder
+cp -r -n _scripts/next-template/*/.?* ./
+
+# yarn
+yarn add react react-dom next
+yarn add eslint eslint-plugin-react --dev

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# copy template folder
+cp -r -n _scripts/express-template/* _scripts/express-template/"."[!"."]* ./
+
+# yarn
+yarn add express body-parser
+yarn add eslint --dev
